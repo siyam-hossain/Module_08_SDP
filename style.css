@@ -1,0 +1,17 @@
+#group-container{
+    position: sticky;
+    top: 25px;
+    width: 300px;
+}
+
+#drinks-container{
+    /* height: 200px; */
+    padding: 10px;
+    border: 1px solid gray;
+    height: auto;
+
+
+}
+.drink-alert{
+    color: red;
+}

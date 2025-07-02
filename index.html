@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail API</title>
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container main-container mt-5">
+
+        <h2 class="container">Welcome to Drink Zone</h2>
+
+        <form class="container" onsubmit="searchDrinks(event)">
+            <div class="row">
+                <div class="col-lg-9 col-md-8 col-sm-12 mb-2">
+                    <input id="searchField" class="form-control mb-3" type="text" placeholder="Search Drinks Here..." aria-label="Search">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <button class="btn btn-primary w-100 mb-3" type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+
+
+        <!-- Drinks Cards -->
+        <div class="row container mx-0">
+            <div class="col-lg-9 col-md-8 col-sm-6">
+                <div class="row g-4" id="drinks-container">
+                    
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 ">
+                <div id="group-container" class="card d-flex p-3">
+                    <h3 class="">Total Cart: <b id="card-count">0</b><b>/7</b></h3>
+                    
+                    
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modal-body">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+    <script src="bootstrap-5.3.7-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
